@@ -1,6 +1,6 @@
 <template>
   <main>
-    Hello {{ time }}
+    Server time: {{ time }}
   </main>
 </template>
 
