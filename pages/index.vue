@@ -1,6 +1,6 @@
 <template>
   <main>
-    Server time: {{ time }}
+    UTC Time: {{ time }}
   </main>
 </template>
 
@@ -10,7 +10,7 @@ export default {
     time: null
   }),
   async mounted () {
-    this.time = await fetch('/api/time').then(res => res.json())
+    this.time = await fetch('/api/time/UTC').then(res => res.json())
   }
 }
 </script>
