@@ -1,11 +1,19 @@
 {
   "name": "nuxt-vercel",
   "version": "1.0.0",
+  "scripts": {
+    "dev": "nuxt-ts dev",
+    "build": "nuxt-ts generate"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/robozevel/nuxt-vercel.git"
   },
   "dependencies": {
+    "@nuxt/types": "^2.14.7",
+    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxt/typescript-runtime": "^2.0.0",
+    "@vercel/node": "^1.8.5",
     "nuxt": "^2.14.7"
   }
 }
